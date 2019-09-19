@@ -11,9 +11,7 @@ class GameObject {
   constructor(attr) {
     this.createdAt = attr.createdAt;
     this.name = attr.name;
-    this.length = attr.dimensions.length;
-    this.width = attr.dimensions.width;
-    this.height = attr.dimensions.height;
+    this.dimensions = attr.dimensions;
   }
 
   destroy() {
